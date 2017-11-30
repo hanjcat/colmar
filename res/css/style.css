@@ -1,0 +1,150 @@
+/*
+Colors:
+#DCDCDC
+#696969
+*/
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+h1, h2, h3, img, span, div {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  padding: 32px auto;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+/*HEADER SECTION*/
+
+.header {
+  height: 4rem;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  flex-flow: row space-between;
+}
+
+#logo {
+  float: left;
+  left: 1.5rem;
+}
+
+#logo span {
+  font-size: 2rem;
+}
+
+#nav span {
+  padding-left: 1rem;
+}
+
+/*BANNER SECTION*/
+
+#banner {
+  background-color: #DCDCDC;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#banner .container {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+#banner .card {
+  width: 30%;
+}
+
+#banner .card span {
+  color: white;
+  background-color: #696969;
+  padding: .5rem auto;
+}
+
+/*INFO SECTION*/
+
+#info {
+  display: flex;
+}
+
+#info div:first-child {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+#info div:first-child .container {
+  width: 60%;
+}
+
+#info h2 {
+  padding-bottom: 1.5rem;
+}
+
+#info .author {
+  margin-bottom: 32px;
+}
+
+#info .card {
+  display: flex;
+}
+
+#info .card .container {
+  width: 35%;
+}
+
+#info .card div:last-child {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+/*COURSES SECTION*/
+
+#courses {
+  background-color: #DCDCDC;
+}
+
+/*EXHIBIT SECTION*/
+
+#exhibit {
+
+}
+
+/*FOOTER SECTION*/
+
+/*MEDIA QUERY*/
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
