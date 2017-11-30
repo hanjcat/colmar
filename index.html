@@ -11,7 +11,7 @@
       <div id="logo">
         <img src="./res/img/ic-logo.svg" alt="logo">
         <span class="bold">COLMAR</span>
-        <span>ACADEMY</span>
+        <span class="thin">ACADEMY</span>
       </div>
       <div id="nav">
         <span>On campus</span>
@@ -38,15 +38,15 @@
         </div>
       </div>
       <div id="info">
-        <div>
+        <div id="infomain">
           <div class="container">
             <img src="./res/img/information-main.jpg" alt="main">
           </div>
           <h2>It doesn't hurt to keep practicing</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          <span class="author">Emanual, Sr Strategist at Hiring.com</span>
+          <span class="author">&nbsp;Emanuel, Sr Strategist at Hiring.com</span>
         </div>
-        <div>
+        <div id="infocards">
           <div class="card">
             <div class="container desktop">
               <img src="./res/img/information-orientation.jpg" alt="orientation">
@@ -84,51 +84,63 @@
         <div class="desktop">
           <div class="card">
             <div class="container">
-              <img src="course-software.jpg" alt="software">
+              <img src="./res/img/course-software.jpg" alt="software">
             </div>
-            <h3>Software engineering</h3>
-            <span>COURSES</span>
-            <span>Web Development, Mobile Development, iOT, APIs</span>
+            <div class="content">
+              <h3>Software engineering</h3>
+              <span>COURSES</span>
+              <span>Web Development, Mobile Development, iOT, APIs</span>
+            </div>
           </div>
           <div class="card">
             <div class="container">
-              <img src="course-computer-art.jpg" alt="computer">
+              <img src="./res/img/course-computer-art.jpg" alt="computer">
             </div>
-            <h3>Computer art</h3>
-            <span>COURSES</span>
-            <span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
+            <div class="content">
+              <h3>Computer art</h3>
+              <span>COURSES</span>
+              <span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
+            </div>
           </div>
           <div class="card">
             <div class="container">
-              <img src="course-design.jpg" alt="design">
+              <img src="./res/img/course-design.jpg" alt="design">
             </div>
-            <h3>Design</h3>
-            <span>COURSES</span>
-            <span>User Experience Design, User Research, Visual Design</span>
+            <div class="content">
+              <h3>Design</h3>
+              <span>COURSES</span>
+              <span>User Experience Design, User Research, Visual Design</span>
+            </div>
           </div>
           <div class="card">
             <div class="container">
-              <img src="course-data.jpg" alt="data">
+              <img src="./res/img/course-data.jpg" alt="data">
             </div>
-            <h3>Data</h3>
-            <span>COURSES</span>
-            <span>Data Science, Big Data, SQL, Data Visualization</span>
+            <div class="content">
+              <h3>Data</h3>
+              <span>COURSES</span>
+              <span>Data Science, Big Data, SQL, Data Visualization</span>
+            </div>
           </div>
           <div class="card">
             <div class="container">
-              <img src="course-business.jpg" alt="business">
+              <img src="./res/img/course-business.jpg" alt="business">
             </div>
-            <h3>Business</h3>
-            <span>COURSES</span>
-            <span>Product Development, Business Development, Startup</span>
+            <div class="content">
+              <h3>Business</h3>
+              <span>COURSES</span>
+              <span>Product Development, Business Development, Startup</span>
+            </div>
           </div>
           <div class="card">
             <div class="container">
-              <img src="course-marketing.jpg" alt="marketing">
+              <img src="./res/img/course-marketing.jpg" alt="marketing">
             </div>
-            <h3>Marketing</h3>
-            <span>COURSES</span>
-            <span>Analytics, Content Marketing, Mobile Marketing</span>
+            <div class="content">
+              <h3>Marketing</h3>
+              <span>COURSES</span>
+              <span>Analytics, Content Marketing, Mobile Marketing</span>
+            </div>
           </div>
         </div>
         <div class="mobile">
@@ -142,26 +154,31 @@
       </div>
       <div id="exhibit">
         <h2>Thesis exhibit</h2>
-        <div>
+        <div id="vid">
           <div class="container">
-            <video src="thesis.mp4">CANNOT LOAD VIDEO</video>
+            <video width="320" height="240" controls>
+              <source src="thesis.mp4">
+                CANNOT LOAD VIDEO
+            </video>
           </div>
           <h3 class="desktop">Reimagine urban</h3>
           <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         </div>
-        <div class="card desktop">
-          <div class="container">
-            <img src="./res/img/thesis-fisma.jpg" alt="fisma">
+        <div class="desktop">
+          <div class="card">
+            <div class="container">
+              <img src="./res/img/thesis-fisma.jpg" alt="fisma">
+            </div>
+            <h3>Fima: Design and Prototype</h3>
+            <p>Designer showcase of new prototype product</p>
           </div>
-          <h3>Fima: Design and Prototype</h3>
-          <p>Designer showcase of new prototype product</p>
-        </div>
-        <div class="card desktop">
-          <div class="container">
-            <img src="./res/img/thesis-now-and-then.jpg" alt="nowthen">
+          <div class="card">
+            <div class="container">
+              <img src="./res/img/thesis-now-and-then.jpg" alt="nowthen">
+            </div>
+            <h3>Now and then</h3>
+            <p>Research study about New York</p>
           </div>
-          <h3>Now and then</h3>
-          <p>Research study about New York</p>
         </div>
       </div>
     </div>
