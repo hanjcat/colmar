@@ -30,6 +30,7 @@ h2 {
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 2rem;
+  text-align: center;
 }
 
 h3 {
@@ -161,10 +162,11 @@ a {
 
 #infomain h2 {
   padding: 0 0 1.5rem 1.5rem;
+  text-align: left;
 }
 
 #infomain p {
-  padding-left: 1.5rem;
+  padding: 0rem 1.5rem;
 }
 
 #infomain span {
@@ -215,6 +217,11 @@ a {
   padding: .5rem 0;
 }
 
+#infocards p {
+  padding-right: 1.5rem;
+  font-size: .8rem;
+}
+
 #infocards a {
   padding: .5rem 0;
   text-decoration: none;
@@ -227,15 +234,15 @@ a {
 }
 
 #courses h2 {
-  padding-top: 2rem;
+  padding: 2rem 0rem 1rem 0rem;
   text-align: center;
 }
 
 #courses .desktop {
-  padding: 2rem 4rem;
+  padding: .5rem 0rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -249,7 +256,7 @@ a {
   height: auto;
 }
 
-#courses .content {
+#courses .detail {
   height: 10rem;
   background-color: white;
   display: flex;
@@ -261,7 +268,7 @@ a {
 }
 
 #courses span {
-  padding: .25rem 1rem;
+  padding: 0rem 1rem;
   color: #696969;
   line-height: 1.25rem;
 }
@@ -269,7 +276,20 @@ a {
 /*EXHIBIT SECTION*/
 
 #exhibit {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
 
+#exhibit h2 {
+  padding: 2rem 0rem;
+}
+
+#exhibit .content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #vid {
@@ -280,7 +300,71 @@ a {
   padding: 0rem 1.5rem;
 }
 
+#vid h3 {
+  padding: 1.5rem 1.5rem .5rem 1.5rem;
+}
+
+#vid p {
+  padding: 0rem 1.5rem 2rem 1.5rem;
+}
+
+#excards {
+  padding-right: .5rem;
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+#excards .card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#excards .card:first-child {
+  background-color: #DCDCDC;
+}
+
+#excards .card .container {
+  width: 70%;
+  padding: 1rem;
+}
+
+#excards h3 {
+  padding: .5rem 0rem;
+  line-height: 1.2;
+}
+
+#excards p {
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
 /*FOOTER SECTION*/
+
+#footer {
+  padding: 1rem 0rem 3rem 0rem;
+  border-top: 1px solid #DCDCDC;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#footer .desktop {
+  padding-right: 1.5rem;
+  width: auto;
+}
+
+#copy {
+  padding-left: 1.5rem;
+}
+
+#footer span {
+  color: #696969;
+  font-size: .75rem;
+}
 
 /*MEDIA QUERY*/
 

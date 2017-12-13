@@ -6,7 +6,7 @@
     <link href="./res/css/style.css" type="text/css" rel="stylesheet">
     <title>Colmar Academy</title>
   </head>
-  <body>
+  <!-- <body> -->
     <div class="header desktop">
       <div id="logo">
         <img src="./res/img/ic-logo.svg" alt="logo">
@@ -86,7 +86,7 @@
             <div class="container">
               <img src="./res/img/course-software.jpg" alt="software">
             </div>
-            <div class="content">
+            <div class="detail">
               <h3>Software engineering</h3>
               <span>COURSES</span>
               <span>Web Development, Mobile Development, iOT, APIs</span>
@@ -96,7 +96,7 @@
             <div class="container">
               <img src="./res/img/course-computer-art.jpg" alt="computer">
             </div>
-            <div class="content">
+            <div class="detail">
               <h3>Computer art</h3>
               <span>COURSES</span>
               <span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
@@ -106,7 +106,7 @@
             <div class="container">
               <img src="./res/img/course-design.jpg" alt="design">
             </div>
-            <div class="content">
+            <div class="detail">
               <h3>Design</h3>
               <span>COURSES</span>
               <span>User Experience Design, User Research, Visual Design</span>
@@ -116,7 +116,7 @@
             <div class="container">
               <img src="./res/img/course-data.jpg" alt="data">
             </div>
-            <div class="content">
+            <div class="detail">
               <h3>Data</h3>
               <span>COURSES</span>
               <span>Data Science, Big Data, SQL, Data Visualization</span>
@@ -126,7 +126,7 @@
             <div class="container">
               <img src="./res/img/course-business.jpg" alt="business">
             </div>
-            <div class="content">
+            <div class="detail">
               <h3>Business</h3>
               <span>COURSES</span>
               <span>Product Development, Business Development, Startup</span>
@@ -136,7 +136,7 @@
             <div class="container">
               <img src="./res/img/course-marketing.jpg" alt="marketing">
             </div>
-            <div class="content">
+            <div class="detail">
               <h3>Marketing</h3>
               <span>COURSES</span>
               <span>Analytics, Content Marketing, Mobile Marketing</span>
@@ -154,37 +154,46 @@
       </div>
       <div id="exhibit">
         <h2>Thesis exhibit</h2>
-        <div id="vid">
-          <div class="container">
-            <video width="320" height="240" controls>
-              <source src="thesis.mp4">
-                CANNOT LOAD VIDEO
-            </video>
-          </div>
-          <h3 class="desktop">Reimagine urban</h3>
-          <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-        </div>
-        <div class="desktop">
-          <div class="card">
+        <div class="content">
+          <div id="vid">
             <div class="container">
-              <img src="./res/img/thesis-fisma.jpg" alt="fisma">
+              <video width="320" height="240" controls>
+                <source src="./res/vid/thesis.mp4" type="video/mp4">
+                  CANNOT LOAD VIDEO
+              </video>
             </div>
-            <h3>Fima: Design and Prototype</h3>
-            <p>Designer showcase of new prototype product</p>
+            <h3 class="desktop">Reimagine urban</h3>
+            <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           </div>
-          <div class="card">
-            <div class="container">
-              <img src="./res/img/thesis-now-and-then.jpg" alt="nowthen">
+          <div id="excards" class="desktop">
+            <div class="card">
+              <div class="container">
+                <img src="./res/img/thesis-fisma.jpg" alt="fisma">
+              </div>
+              <div class="detail">
+                <h3>Fima: Design and Prototype</h3>
+                <p>Designer showcase of new prototype product</p>
+              </div>
             </div>
-            <h3>Now and then</h3>
-            <p>Research study about New York</p>
+            <div class="card">
+              <div class="container">
+                <img src="./res/img/thesis-now-and-then.jpg" alt="nowthen">
+              </div>
+              <div class="detail">
+                <h3>Now and then</h3>
+                <p>Research study about New York</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div id="footer">
-      <span>&copy;2016 Colmar Academy. All rights reserved</span>
-      <span class="desktop">Terms%20Privacy</span>
+      <span id="copy">&copy; 2016 Colmar Academy. All rights reserved</span>
+      <div class="desktop">
+        <span>Terms</span>
+        <span>Privacy</span>
+      </div>
     </div>
-  </body>
+  <!-- </body> -->
 </html>
