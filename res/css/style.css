@@ -21,7 +21,7 @@ span {
 }
 
 h1 {
-  margin: 1rem 0;
+  padding: 2rem 0;
   font-size: 2.25rem;
   font-weight: 700;
 }
@@ -47,7 +47,7 @@ a {
   font-size: .9rem;
 }
 
-.container {
+.container, .details {
   box-sizing: border-box;
 }
 
@@ -125,11 +125,12 @@ a {
 }
 
 #banner h3 {
-  padding: 1rem 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 #banner .card a {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 #banner .card span {
@@ -205,7 +206,7 @@ a {
   padding: 1rem;
 }
 
-#infocards .card div:last-child {
+#infocards .card .details {
   width: 65%;
   display: flex;
   flex-flow: column nowrap;
@@ -373,11 +374,112 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
-  .desktop {
+  .desktop, #info .desktop, #courses .desktop, #exhibit .desktop {
     display: none;
   }
 
   .mobile {
     display: block;
+  }
+
+  .header.mobile {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header.mobile img {
+    display: block;
+    width: 2em;
+  }
+
+  #banner {
+    flex-flow: column nowrap;
+  }
+
+  #banner .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #banner .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #banner .card a {
+    margin-bottom: 2rem;
+  }
+
+  /*INFO SECTION*/
+
+  #infocards {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid #DCDCDC;
+  }
+
+  #infocards .card {
+    border: none;
+    flex-flow: column nowrap;
+  }
+
+  #infocards .card .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #infocards .card .details {
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  #infocards .card:last-child {
+    background-color: inherit;
+  }
+
+  /*COURSES SECTION*/
+
+  #courses {
+    background-color: inherit;
+  }
+
+  #courses .mobile {
+    box-sizing: border-box;
+    padding: 0rem 1rem 2rem 1rem;
+    border-bottom: 1px solid #DCDCDC;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #courses .mobile span {
+    width: 85%;
+    padding: 1.5rem;
+    border: .25rem solid white;
+    background-color: #DCDCDC;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  #vid {
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+
+  #vid .container {
+    padding: 0;
+  }
+
+  #vid video {
+    width: 100%;
+    height: auto;
+  }
+
+  #footer {
+    padding: 1rem 0rem;
+    border-top: none;
   }
 }
