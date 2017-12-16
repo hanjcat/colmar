@@ -11,40 +11,36 @@ html {
   background-color: white;
 }
 
-h1, h2, h3, div, img, video {
+h1, h2, h3, div, span, img, video {
   display: block;
   width: 100%;
 }
 
-span {
-  font-size: .9rem;
-  display: inline-block;
+h1, h2, h3 {
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
 }
 
 h1 {
   padding: 2rem 0;
-  font-family: "Titillium Web", sans-serif;
   font-size: 2.25rem;
-  font-weight: 700;
 }
 
 h2 {
-  font-family: "Titillium Web", sans-serif;
   font-size: 1.875rem;
-  font-weight: 700;
   line-height: 2rem;
   text-align: center;
 }
 
 h3 {
-  font-family: "Titillium Web", sans-serif;
   font-size: 1.2rem;
-  font-weight: 700;
 }
 
-p {
+span, p {
+  width: 90%;
   font-size: .9rem;
-  line-height: 1.2rem;
+  line-height: 1.25rem;
 }
 
 a {
@@ -59,10 +55,13 @@ a {
 
 .header {
   height: 4rem;
+  border-bottom: 3px double #696969;
+  box-sizing: border-box;
   background-color: white;
   position: fixed;
   display: flex;
   flex-flow: row space-between;
+  justify-content: space-between;
 }
 
 .header img {
@@ -71,6 +70,7 @@ a {
 }
 
 #logo {
+  width: 12rem;
   margin-left: 1.5rem;
   display: flex;
   flex-flow: row nowrap;
@@ -79,8 +79,6 @@ a {
 }
 
 #logo span {
-  padding: 0;
-  margin: 0;
   font-size: 1.5rem;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -95,6 +93,7 @@ a {
 }
 
 #nav {
+  width: auto;
   margin-right: 2rem;
   display: flex;
   justify-content: flex-end;
@@ -102,6 +101,7 @@ a {
 }
 
 #nav span {
+  width: auto;
   margin-left: 1rem;
 }
 
@@ -168,7 +168,6 @@ a {
 
 #infomain h2 {
   padding: 0 0 1.5rem 1.5rem;
-  box-sizing: border-box;
   text-align: left;
 }
 
@@ -206,6 +205,7 @@ a {
 
 #infocards .card:last-child {
   background-color: #DCDCDC;
+  border-bottom: 1px solid white;
 }
 
 #infocards .card .container {
@@ -279,7 +279,6 @@ a {
 #courses span {
   padding: 0rem 1rem;
   color: #696969;
-  line-height: 1.25rem;
 }
 
 /*EXHIBIT SECTION*/
@@ -343,7 +342,7 @@ a {
 
 #excards h3 {
   padding: .5rem 0rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 #excards p {
@@ -361,16 +360,20 @@ a {
 }
 
 #footer .desktop {
-  padding-right: 1.5rem;
   width: auto;
+  padding-right: 1.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#footer .desktop span {
+  padding-left: .25rem;
+  color: #696969;
+  font-size: .75rem;
 }
 
 #copy {
   padding-left: 1.5rem;
-}
-
-#footer span {
-  color: #696969;
   font-size: .75rem;
 }
 
@@ -412,7 +415,7 @@ a {
     font-size: 1.8rem;
   }
 
-/*SCALING HEADER SECTION*/
+  /*SCALING HEADER SECTION*/
 
   .header.desktop {
     display: none;
@@ -430,7 +433,7 @@ a {
     width: 2em;
   }
 
-/*SCALING BANNER SECTION*/
+  /*SCALING BANNER SECTION*/
 
   #banner {
     flex-flow: column nowrap;
@@ -450,7 +453,7 @@ a {
     margin-bottom: 2rem;
   }
 
-/*SCALING INFO SECTION*/
+  /*SCALING INFO SECTION*/
 
   #info {
     flex-flow: column nowrap;
@@ -474,21 +477,27 @@ a {
     width: 10rem;
   }
 
-/*SCALING COURSES SECTION*/
+  /*SCALING COURSES SECTION*/
 
   #courses .card {
     max-width: 48%;
   }
 
-/*SCALING EXHIBIT SECTION*/
+  /*SCALING EXHIBIT SECTION*/
 
   #excards .card {
     flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  #excards .card .container {
+    width: 8rem;
   }
 
   #excards h3, #excards p {
-    padding: 0 1rem;
+    padding: .25rem 1rem;
     box-sizing: border-box;
+    line-height: 1;
   }
 }
 
@@ -503,13 +512,13 @@ a {
     display: block;
   }
 
-/*MOBILE BANNER SECTION*/
+  /*MOBILE BANNER SECTION*/
 
-#banner .container {
-  padding: 0;
-}
+  #banner .container {
+    padding: 0;
+  }
 
-/*MOBILE INFO SECTION*/
+  /*MOBILE INFO SECTION*/
 
   #infocards {
     width: 100%;
@@ -532,7 +541,7 @@ a {
     padding: 1rem 1rem 1rem 1rem;
   }
 
-/*MOBILE COURSES SECTION*/
+  /*MOBILE COURSES SECTION*/
 
   #courses {
     background-color: inherit;
@@ -557,7 +566,7 @@ a {
     font-weight: bold;
   }
 
-/*MOBILE EXHIBIT SECTION*/
+  /*MOBILE EXHIBIT SECTION*/
 
   #vid {
     width: 100%;
@@ -572,6 +581,8 @@ a {
     width: 100%;
     height: auto;
   }
+
+  /*MOBILE FOOTER SECTION*/
 
   #footer {
     padding: 1rem 0rem;
